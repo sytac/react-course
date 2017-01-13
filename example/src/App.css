@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+  font-family: helvetica, sans-serif;
+  font-size: 18px;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+#root {
+  height: 100%;
+}
+
+.login {
+  margin: 100px auto;
+  width: 500px;
+}
+
+.login button {
+  border: 1px solid #ddd;
+  font-size: 18px;
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin: 10px;
+}
+
+.chat {
+  height: 100%;
+}
+
+.chat header {
+  position: fixed;
+  height: 40px;
+  padding: 10px;
+  background: white;
+  width: 100%;
+  border-bottom: solid 1px #ddd;
+  display: flex;
+  flex-direction: row;
+}
+
+.chat header h1 {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.chat main {
+  padding-top: 40px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.chat section {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.chat input {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.chat aside {
+  width: 200px;
+}
+
+.messages {
+  padding: 10px;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.message span {
+  font-weight: bold;
+}
+
+.message small {
+  font-size: 10px;
+  color: #999;
+  font-weight: normal;
+}
+
+.users {
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+.users li.online:before {
+  content: "• ";
+  color: green;
+}
